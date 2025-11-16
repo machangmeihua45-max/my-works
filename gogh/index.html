@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ゴッホ展｜トップページ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Sawaraabi Mincho";
+            background: #F0F2DB;
+        }
+
+        /*ヘッダー画像*/
+        .hero {
+            width: 100%;
+            height: 50vh;
+            background-image: url("image_mobile.jpg"); /* ← PC/スマホ共通の画像 */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /*タイトル*/
+        .title-box {
+            padding: 20px;
+            background: #ffffff;
+            display: flex;
+            align-items: baseline;
+            gap: 15px;
+        }
+        .title-box h1 {
+            font-size: 64px; /*ゴッホ展*/
+            margin: 0;
+        }
+        .title-box p {
+            margin: 0;
+            font-size: 24px; /*家族が繋いだ画家の夢*/
+            color: #000000;
+        }
+
+        /*ボタン*/
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 5px;
+        }
+        .menu a {
+            display: block;
+            text-align: center;
+            padding: 8px;
+            background: #B6C4C7;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 20px;
+            max-width: 180px;
+        }
+
+        /*PC レイアウト*/
+        @media (min-width: 800px) {
+            .hero {
+                height: 60vh;
+            }
+            .menu {
+                grid-template-columns: repeat(6, 1fr);
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero"></div>
+
+    <div class="title-box">
+        <h1>ゴッホ展</h1>
+        <p>-家族がつないだ画家の夢-</p>
+    </div>
+
+    <div class="menu">
+        <a href="0909_2.html">展覧会概要</a>
+        <a href="0909_3_midokoro.html">みどころ</a>
+        <a href="0909_4_sakka.html">作家紹介</a>
+        <a href="0909_5_sakuhin.html">展示作品</a>
+        <a href="0909_6_kaizyou.html">アクセス</a>
+        <a href="0909_7_kaiki.html">会期・開館時間</a>
+    </div>
+
+</body>
+</html>
